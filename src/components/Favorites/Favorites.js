@@ -21,6 +21,7 @@ class Favorites extends Component {
     }
 
     render() { 
+        console.log(this.props.idList)
         return (
             <div className="favorites">
                 <input value={this.props.favoritesTitle} className="favorites__name" disabled={this.props.idList} onChange={this.changeTitleHandler} />
